@@ -24,7 +24,7 @@ void setup() {
 
 void loop() {
 
-  int packetSize = LoRa.parsePacket();
+  int packetSize = LoRa.parsePacket(); // LoRa chip continuously listens.
 
   if (packetSize) {
 
